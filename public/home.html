@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app='TestApp'>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,300,200italic,200,700italic,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+</head>
+<body ng-controller="TestCtrl as myCtrl" ng-class="(myCtrl.isActive)?'active':''">
+  <header>
+    <ul>
+      <li>About</li>
+      <li>Work</li>
+      <li>Contact</li>
+    </ul>
+  </header>
+  </header>
+  <div class="scroll-animate">
+    <div class="scroll-animate-main">
+      <div class="wrapper">
+        <div class="app-header">
+          <div class="name">
+            <h1><span>HI,</span> <span>MY</span> <span>NAME</span> <span>IS</span> <span>JEFF</span>.</h1>
+          </div>
+        </div>
+        <div class="app-main">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+          <div class="app-bio section">
+            <h4>Full Stack Developer and Designer</h4>
+            <p>
+              I am a New York City based developer with a passion for design and user interactivity.
+            </p>
+            <p>
+              Trained as an architect, I have over 4 years of design and construction experience that I am able to utilize in seeing a project through from inception to completion.
+            </p>
+            <p>
+              When I'm not programming, I like to spend my time traveling, taking digital and film photos, visiting museums, gaming and biking!
+            </p>
+          </div>
+          <div class="app-work section">
+            <h4>Work</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="container">
+    <a class="button" href='#' ng-click="myCtrl.isActive = !myCtrl.isActive"><i  ng-class="(myCtrl.isActive)?'activeThree':''" class="fa fa-cogs fa-2x"></i></a><span ng-class="(myCtrl.isActive)?'activeTwo':''"> Currently under construction!</span>
+    <h3 class="white" ng-class="(myCtrl.isActive)?'activeTwo':''">Check back next time!</h3>
+  </div> -->
+</body>
+<script type="text/javascript" src="scripts/controllers.js"></script>
+</html>
