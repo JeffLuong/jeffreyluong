@@ -4,19 +4,24 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css" charset="utf-8">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,300,200italic,200,700italic,700' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-  <script type="text/javascript" src="scripts/app.js"></script>
+  <link rel="stylesheet" href="css/style.css" charset="utf-8">
 </head>
 <body ng-controller="TestCtrl as myCtrl" ng-class="(myCtrl.isActive)?'active':''">
   <header>
-    <ul>
-      <li>About</li>
-      <li>Work</li>
-      <li>Contact</li>
-    </ul>
+    <div id="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="menu-wrapper">
+      <ul id="menu">
+        <li id="app-bio">About</li>
+        <li id="app-work">Work</li>
+        <li id="app-photography">Photography</li>
+        <li id="app-contact">Contact</li>
+      </ul>
+    </div>
   </header>
   </header>
   <div class="scroll-animate">
@@ -33,18 +38,133 @@
           <div class="app-bio section">
             <h4>Full Stack Developer and Designer</h4>
             <p>
-              I am a New York City based developer with a passion for design and user interactivity.
+              I am a New York City based web developer with a passion for design and user interactivity.
             </p>
             <p>
-              Trained as an architect, I have over 4 years of design and construction experience that I am able to utilize in seeing a project through from inception to completion.
+              Trained as an architect, I have over 4 years of design and construction experience that I am able to utilize in seeing any project through from inception to completion. I am excited to apply these skills to my future as a developer.
             </p>
             <p>
-              When I'm not programming, I like to spend my time traveling, taking digital and film photos, visiting museums, gaming and biking!
+              When I'm not programming, I like to spend my time traveling, taking digital and film photos, visiting museums, gaming and biking.
+            </p>
+            <p>
+              Check out my some of my work below!
             </p>
           </div>
           <div class="app-work section">
             <h4>Work</h4>
+            <p>
+              Web Design and Development
+            </p>
+            <ul class="project-container">
+              <li id="hue-square">
+                <div class="project-info">
+                  <div class="project-background"></div>
+                  <div class="project-descrip">
+                    <h5>HUE SQUARE</h5>
+                    <span class="about">
+                      Minimalist color mixing puzzle game.
+                    </span>
+                    <a href="http://www.huesquare.com" target="_blank">VIEW PROJECT</a>
+                  </div>
+                  <img src="img/work/hue-square.jpg" alt="Hue Square"/>
+                </div>
+              </li>
+
+              <li id="neighbor-nation">
+                <div class="project-info">
+                  <div class="project-background"></div>
+                  <div class="project-descrip">
+                    <h5>NEIGHBOR NATION</h5>
+                    <span class="about">
+                      Communication platform for apartment specific neighbors and tenants.
+                    </span>
+                    <a href="http://www.neighbornation.co" target="_blank">VIEW PROJECT</a>
+                  </div>
+                  <img src="img/work/neighbor-nation.jpg" alt="Neighbor Nation"/>
+                </div>
+              </li>
+
+              <li id="jack">
+                <div class="project-info">
+                  <div class="project-background"></div>
+                  <div class="project-descrip">
+                    <h5>JACK.</h5>
+                    <span class="about">
+                      A Black Jack game with clean design and slick animations.
+                    </span>
+                    <a href="http://jeffluong.github.io/PROJECT_01_Jack/" target="_blank">VIEW PROJECT</a>
+                  </div>
+                  <img src="img/work/jack.jpg" alt="Jack"/>
+                </div>
+              </li>
+
+              <li id="wiki-articles">
+                <div class="project-info">
+                  <div class="project-background"></div>
+                  <div class="project-descrip">
+                    <h5>WIKIARTICLES</h5>
+                    <span class="about">
+                      Simple wiki-based CRUD application with a minimalist design.
+                    </span>
+                    <a href="https://www.ga-wikiarticles.herokuapp.com/" target="_blank">VIEW PROJECT</a>
+                  </div>
+                  <img src="img/work/wiki-articles.jpg" alt="Wiki Articles"/>
+                </div>
+              </li>
+
+              <li id="ntrval">
+                <div class="project-info">
+                  <div class="project-background"></div>
+                  <div class="project-descrip">
+                    <h5>NTRVAL</h5>
+                    <span class="about">
+                      World clock, graph bars, and pastel colors. Time displayed in intervals.
+                    </span>
+                    <a href="http://ntrval.com/" target="_blank">VIEW PROJECT</a>
+                  </div>
+                  <img src="img/work/ntrval.jpg" alt="Ntrval"/>
+                </div>
+              </li>
+
+            </ul>
           </div>
+          <div class="app-photography section">
+            <h4>Photography</h4>
+          </div>
+          <div class="app-contact section">
+            <h4>Contact</h4>
+            <p>
+              Let's get in touch
+            </p>
+            <div class="left-column">
+              <p>JEFFREY LUONG</p>
+              <p>
+                <a href="mailto:jeffreykluong@gmail.com">jeffreykluong@gmail.com</a>
+              </p>
+              <p>
+                1-(917)-816-7812
+              </p>
+              <p>
+                New York, NY USA
+              </p>
+            </div>
+            <ul class="app-social">
+              <!-- <li><a href="mailto:jeffreykluong@gmail.com">jeffreykluong@gmail.com</a></li> -->
+              <li><a href="https://www.github.com/JeffLuong" target="_blank">Github</a></li>
+              <li><a href="https://www.codepen.io/jluong/" target="_blank">Codepen</a></li>
+              <li><a href="https://www.linkedin.com/in/jeffreyluong" target="_blank">LinkedIn</a></li>
+              <li><a href="https://instagram.com/jeffluong/" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+          <div id="scroll-top" class="section"></div>
+          <div class="section border-none">
+            Top
+          </div>
+        </div>
+        <div class="app-footer">
+          <p>
+            Copyright © 2015 Jeffrey Luong
+          </p>
         </div>
       </div>
     </div>
@@ -54,5 +174,8 @@
     <h3 class="white" ng-class="(myCtrl.isActive)?'activeTwo':''">Check back next time!</h3>
   </div> -->
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 <script type="text/javascript" src="scripts/controllers.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
 </html>
