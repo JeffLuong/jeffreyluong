@@ -31,7 +31,6 @@ $('#app-bio').click(function() {
 });
 
 $('#app-work').click(function() {
-  console.log("work button working");
     $root.animate({
         scrollTop: $(".app-work").offset().top
     }, 750);
@@ -70,25 +69,17 @@ $('#scroll-top').click(function() {
 
 $(window).load(function(){
     var windowHeight   = $(window).height(),
-        heightDocument = (windowHeight) + ($('.app-main').height()) + ($('footer').height()) - 20;
+        heightDocument = (windowHeight) + ($('.app-main').height()) + ($('footer').height());
 
     $('.scroll-animate, .scroll-animate-main').css({
         'height' :  heightDocument + 'px'
     });
 
-    window.onscroll = function(){
+    $(window).on('scroll', function(){
         var scroll = window.scrollY;
-        var scrollPercent = (scroll * 100) / heightDocument;
+        var scrollPercent = Math.floor((scroll * 100) / heightDocument);
 
-        $('.scroll-animate-main').css({
-          'top' : '-' + scroll + 'px'
-        });
-
-        $('.app-header').css({
-          'background-position-y' : (50 - scrollPercent) + '%'
-        });
-
-        if (scrollPercent > 17) {
+        if (scrollPercent > 10.5) {
           $("#hamburger-button > span").css({
             'background-color' : '#4463A9'
           });
@@ -97,5 +88,5 @@ $(window).load(function(){
             'background-color' : 'white'
           });
         }
-    }
+    });
 });

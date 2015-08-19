@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html ng-app='TestApp'>
+<html>
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title>Jeffrey Luong</title>
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,300,200italic,200,700italic,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css" charset="utf-8">
+	<link rel="stylesheet" href="css/modal.css" type="text/css">
 </head>
-<body ng-controller="TestCtrl as myCtrl" ng-class="(myCtrl.isActive)?'active':''">
+<body>
   <header>
     <div id="hamburger-button">
         <span></span>
@@ -16,6 +16,7 @@
     </div>
     <div id="menu-wrapper">
       <ul id="menu">
+        <h4>JEFFREY LUONG</h4>
         <li id="app-bio">About</li>
         <li id="app-work">Work</li>
         <li id="app-photography">Photography</li>
@@ -23,7 +24,158 @@
       </ul>
     </div>
   </header>
-  </header>
+
+  <!--~~~~~~~ MODAL 1 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-1">
+    <div class="md-content">
+        <img class="photo" src="img/photography/experimental/Jeff.jpg" alt="Jeff Portrait" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 2 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-2">
+    <div class="md-content">
+        <img class="photo" src="img/photography/experimental/Doro.jpg" alt="Doro Portrait" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 3 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-3">
+    <div class="md-content">
+        <img class="photo" src="img/photography/experimental/Michael.jpg" alt="Michael Portrait" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 4 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-4">
+    <div class="md-content">
+        <img class="photo" src="img/photography/experimental/Isabel.jpg" alt="Isabel Portrait" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 5 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-5">
+    <div class="md-content">
+        <img class="photo" src="img/photography/experimental/DrawingHands.jpg" alt="Drawing Hands" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 6 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-6">
+    <div class="md-content">
+        <img class="photo" src="img/photography/experimental/Ponzu.jpg" alt="Shiba Inu Portrait" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 7 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-7">
+    <div class="md-content">
+        <img class="photo" src="img/photography/experimental/Spheres.jpg" alt="Abstract floating spheres in landscape" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 8 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-8">
+    <div class="md-content">
+        <img class="photo" src="img/photography/experimental/VicenzaCathedral.jpg" alt="Vicenza Cathedral" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 9 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-9">
+    <div class="md-content">
+        <img class="photo" src="img/photography/experimental/Windmills.jpg" alt="Windmills in clouds" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 10 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-10">
+    <div class="md-content">
+        <img class="photo" src="img/photography/film/NYalley.jpg" alt="NY Alley" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 11 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-11">
+    <div class="md-content">
+        <img class="photo" src="img/photography/film/Flatiron.jpg" alt="Flatiron building" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 12 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-12">
+    <div class="md-content">
+        <img class="photo" src="img/photography/film/Venice.jpg" alt="Venice Street" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 13 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-13">
+    <div class="md-content">
+        <img class="photo" src="img/photography/film/StPeter.jpg" alt="St. Peter's Basilica" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 14 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-14">
+    <div class="md-content">
+        <img class="photo" src="img/photography/film/Bernini.jpg" alt="Bernini Sculpture" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+  <!--~~~~~~~ MODAL 15 ~~~~~~~-->
+  <div class="md-modal md-effect-1" id="photo-15">
+    <div class="md-content">
+        <img class="photo" src="img/photography/film/Isabel.jpg" alt="Isabel from back" />
+        <div class="close-button md-close">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+  </div>
+
   <div class="scroll-animate">
     <div class="scroll-animate-main">
       <div class="wrapper">
@@ -84,17 +236,17 @@
                 </div>
               </li>
 
-              <li id="jack">
+              <li id="ntrval">
                 <div class="project-info">
                   <div class="project-background"></div>
                   <div class="project-descrip">
-                    <h5>JACK.</h5>
+                    <h5>NTRVAL</h5>
                     <span class="about">
-                      A Black Jack game with clean design and slick animations.
+                      World clock, graph bars, and pastel colors. Time displayed in intervals.
                     </span>
-                    <a href="http://jeffluong.github.io/PROJECT_01_Jack/" target="_blank">VIEW PROJECT</a>
+                    <a href="http://ntrval.com/" target="_blank">VIEW PROJECT</a>
                   </div>
-                  <img src="img/work/jack.jpg" alt="Jack"/>
+                  <img src="img/work/ntrval.jpg" alt="Ntrval"/>
                 </div>
               </li>
 
@@ -112,17 +264,17 @@
                 </div>
               </li>
 
-              <li id="ntrval">
+              <li id="jack">
                 <div class="project-info">
                   <div class="project-background"></div>
                   <div class="project-descrip">
-                    <h5>NTRVAL</h5>
+                    <h5>JACK.</h5>
                     <span class="about">
-                      World clock, graph bars, and pastel colors. Time displayed in intervals.
+                      A Black Jack game with clean design and slick animations.
                     </span>
-                    <a href="http://ntrval.com/" target="_blank">VIEW PROJECT</a>
+                    <a href="http://jeffluong.github.io/PROJECT_01_Jack/" target="_blank">VIEW PROJECT</a>
                   </div>
-                  <img src="img/work/ntrval.jpg" alt="Ntrval"/>
+                  <img src="img/work/jack.jpg" alt="Jack"/>
                 </div>
               </li>
 
@@ -130,32 +282,148 @@
           </div>
           <div class="app-photography section">
             <h4>Photography</h4>
+            <div class="photo-container">
+
+              <p>
+                Film
+              </p>
+              <ul class="film">
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/film/thumbs/NYalley-thumb.jpg" data-modal="photo-10"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/film/thumbs/Flatiron-thumb.jpg" data-modal="photo-11"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/film/thumbs/Venice-thumb.jpg" data-modal="photo-12"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/film/thumbs/StPeter-thumb.jpg" data-modal="photo-13"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/film/thumbs/Bernini-thumb.jpg" data-modal="photo-14"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/film/thumbs/Isabel-thumb.jpg" data-modal="photo-15"></img>
+                  </div>
+                </li>
+
+              </ul>
+
+              <p>
+                Digital Experimental
+              </p>
+              <ul class="experimental">
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/experimental/thumbs/Jeff-thumb.jpg" data-modal="photo-1"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/experimental/thumbs/Doro-thumb.jpg" data-modal="photo-2"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/experimental/thumbs/Michael-thumb.jpg" data-modal="photo-3"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/experimental/thumbs/Isabel-thumb.jpg" data-modal="photo-4"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/experimental/thumbs/DrawingHands-thumb.jpg" data-modal="photo-5"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/experimental/thumbs/Ponzu-thumb.jpg" data-modal="photo-6"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/experimental/thumbs/Spheres-thumb.jpg" data-modal="photo-7"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/experimental/thumbs/VicenzaCathedral-thumb.jpg" data-modal="photo-8"></img>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb">
+                    <img class="md-trigger photo-thumb" src="img/photography/experimental/thumbs/Windmills-thumb.jpg" data-modal="photo-9"></img>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
           </div>
           <div class="app-contact section">
-            <h4>Contact</h4>
+            <!-- <h4>Contact</h4> -->
             <p>
               Let's get in touch
             </p>
-            <div class="left-column">
-              <p>JEFFREY LUONG</p>
-              <p>
-                <a href="mailto:jeffreykluong@gmail.com">jeffreykluong@gmail.com</a>
-              </p>
-              <p>
-                1-(917)-816-7812
-              </p>
-              <p>
-                New York, NY USA
-              </p>
+            <div class="contact-container">
+              <div class="left-column">
+                <p>JEFFREY LUONG</p>
+                <p>
+                  <a href="mailto:jeffreykluong@gmail.com">jeffreykluong@gmail.com</a>
+                </p>
+                <p>
+                  1-(917)-816-7812
+                </p>
+                <p>
+                  New York, NY USA
+                </p>
+              </div>
+              <div class="right-column">
+                <ul class="app-social">
+                  <div class="profile-photo">
+                    <img src="img/jeff2.png" alt="Jeffrey's Profile Photo" />
+                  </div>
+                  <p>
+                    Find me through social media!
+                  </p>
+                  <!-- <li><a href="mailto:jeffreykluong@gmail.com">jeffreykluong@gmail.com</a></li> -->
+                  <li><a href="https://www.github.com/JeffLuong" target="_blank">Github</a></li>
+                  <li><a href="https://www.codepen.io/jluong/" target="_blank">Codepen</a></li>
+                  <li><a href="https://www.linkedin.com/in/jeffreyluong" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://instagram.com/jeffluong/" target="_blank">Instagram</a></li>
+                </ul>
+              </div>
             </div>
-            <ul class="app-social">
-              <!-- <li><a href="mailto:jeffreykluong@gmail.com">jeffreykluong@gmail.com</a></li> -->
-              <li><a href="https://www.github.com/JeffLuong" target="_blank">Github</a></li>
-              <li><a href="https://www.codepen.io/jluong/" target="_blank">Codepen</a></li>
-              <li><a href="https://www.linkedin.com/in/jeffreyluong" target="_blank">LinkedIn</a></li>
-              <li><a href="https://instagram.com/jeffluong/" target="_blank">Instagram</a></li>
-            </ul>
-          </div>
+            </div>
           <div id="scroll-top" class="section"></div>
           <div class="section border-none">
             Top
@@ -169,13 +437,13 @@
       </div>
     </div>
   </div>
-  <!-- <div class="container">
-    <a class="button" href='#' ng-click="myCtrl.isActive = !myCtrl.isActive"><i  ng-class="(myCtrl.isActive)?'activeThree':''" class="fa fa-cogs fa-2x"></i></a><span ng-class="(myCtrl.isActive)?'activeTwo':''"> Currently under construction!</span>
-    <h3 class="white" ng-class="(myCtrl.isActive)?'activeTwo':''">Check back next time!</h3>
-  </div> -->
+
+  <div class="md-overlay"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/libs/classManager.js"></script>
+  <script type="text/javascript" src="scripts/libs/modalEffects.js"></script>
+  <script type="text/javascript" src="scripts/libs/cssParser.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-<script type="text/javascript" src="scripts/controllers.js"></script>
-<script type="text/javascript" src="scripts/app.js"></script>
 </html>
