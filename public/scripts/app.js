@@ -27,6 +27,8 @@ $('#app-bio').click(function() {
     $root.animate({
         scrollTop: $(".app-bio").offset().top
     }, 750);
+    slideMenu();
+    animateHamburger();
     return false;
 });
 
@@ -34,6 +36,8 @@ $('#app-work').click(function() {
     $root.animate({
         scrollTop: $(".app-work").offset().top
     }, 750);
+    slideMenu();
+    animateHamburger();
     return false;
 });
 
@@ -41,6 +45,8 @@ $('#app-photography').click(function() {
     $root.animate({
         scrollTop: $(".app-photography").offset().top
     }, 750);
+    slideMenu();
+    animateHamburger();
     return false;
 });
 
@@ -48,6 +54,8 @@ $('#app-contact').click(function() {
     $root.animate({
         scrollTop: $(".app-contact").offset().top
     }, 750);
+    slideMenu();
+    animateHamburger();
     return false;
 });
 
@@ -69,17 +77,14 @@ $('#scroll-top').click(function() {
 
 $(window).load(function(){
     var windowHeight   = $(window).height(),
-        heightDocument = (windowHeight) + ($('.app-main').height()) + ($('footer').height());
-
-    $('.scroll-animate, .scroll-animate-main').css({
-        'height' :  heightDocument + 'px'
-    });
+        footerHeight   = $('.app-footer').height(),
+        heightDocument = (windowHeight) + ($('.app-main').height());
 
     $(window).on('scroll', function(){
         var scroll = window.scrollY;
         var scrollPercent = Math.floor((scroll * 100) / heightDocument);
 
-        if (scrollPercent > 10.5) {
+        if (scrollPercent > 11) {
           $("#hamburger-button > span").css({
             'background-color' : '#4463A9'
           });
@@ -88,5 +93,6 @@ $(window).load(function(){
             'background-color' : 'white'
           });
         }
+
     });
 });
