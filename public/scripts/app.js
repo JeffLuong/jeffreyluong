@@ -115,14 +115,10 @@ $('#scroll-top').click(function() {
 });
 
 $(window).load(function(){
-    // var windowHeight   = $(window).height(),
       var  header         = $('.app-header').height();
-        // footerHeight   = $('.app-footer').height(),
-        // heightDocument = (windowHeight) + ($('.app-main').height());
 
     $(window).on('scroll', function(){
         var scroll = window.scrollY;
-        // var scrollPercent = Math.floor((scroll * 100) / heightDocument);
 
         if (scroll >= header) {
           $("#hamburger-button > span").css({
