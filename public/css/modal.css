@@ -12,14 +12,14 @@
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	transition: box-shadow 0.25s ease-in-out;
+	/*transition: box-shadow 0.25s ease-in-out;*/
 }
 
-.md-shadow {
+/*.md-shadow {
 	-webkit-box-shadow: -1px 15px 45px 3px rgba(30, 30, 30 ,1);
 	-moz-box-shadow: -1px 15px 45px 3px rgba(30, 30, 30 ,1);
 	box-shadow: -1px 15px 45px 3px rgba(30, 30, 30 ,1);
-}
+}*/
 
 .md-show {
 	visibility: visible;
@@ -34,7 +34,7 @@
 	left: 0;
 	z-index: 1000;
 	opacity: 0;
-	background-color: rgba(40,40,40, 0.8);
+	background-color: rgba(30,30,30, 0.85);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;

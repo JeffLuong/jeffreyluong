@@ -23,6 +23,7 @@ $hamburger.on('click', function(){
   animateHamburger();
 });
 
+//<><><><> Top menu <><><><><>//
 $('#app-bio').click(function() {
     $root.animate({
         scrollTop: $(".app-bio").offset().top
@@ -59,6 +60,44 @@ $('#app-contact').click(function() {
     return false;
 });
 
+//<><><><> Main menu <><><><>//
+
+$('#app-bio2').click(function() {
+    $root.animate({
+        scrollTop: $(".app-bio").offset().top
+    }, 750);
+    slideMenu();
+    animateHamburger();
+    return false;
+});
+
+$('#app-work2').click(function() {
+    $root.animate({
+        scrollTop: $(".app-work").offset().top
+    }, 750);
+    slideMenu();
+    animateHamburger();
+    return false;
+});
+
+$('#app-photography2').click(function() {
+    $root.animate({
+        scrollTop: $(".app-photography").offset().top
+    }, 750);
+    slideMenu();
+    animateHamburger();
+    return false;
+});
+
+$('#app-contact2').click(function() {
+    $root.animate({
+        scrollTop: $(".app-contact").offset().top
+    }, 750);
+    slideMenu();
+    animateHamburger();
+    return false;
+});
+
 $('.scroll-animate').click(function() {
   if ($("#menu-wrapper").hasClass("open")) {
     slideMenu();
@@ -76,17 +115,18 @@ $('#scroll-top').click(function() {
 });
 
 $(window).load(function(){
-    var windowHeight   = $(window).height(),
-        footerHeight   = $('.app-footer').height(),
-        heightDocument = (windowHeight) + ($('.app-main').height());
+    // var windowHeight   = $(window).height(),
+      var  header         = $('.app-header').height();
+        // footerHeight   = $('.app-footer').height(),
+        // heightDocument = (windowHeight) + ($('.app-main').height());
 
     $(window).on('scroll', function(){
         var scroll = window.scrollY;
-        var scrollPercent = Math.floor((scroll * 100) / heightDocument);
+        // var scrollPercent = Math.floor((scroll * 100) / heightDocument);
 
-        if (scrollPercent > 11) {
+        if (scroll >= header) {
           $("#hamburger-button > span").css({
-            'background-color' : '#4463A9'
+            'background-color' : '#4D84A6'
           });
         } else {
           $("#hamburger-button > span").css({
