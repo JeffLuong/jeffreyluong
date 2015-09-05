@@ -602,7 +602,9 @@ ul#menu li:last-child:hover {
 #hue-square,
 #wiki-articles,
 #jack,
-#ntrval {
+#ntrval,
+#neighbor-nation,
+#isabel-chen {
   width: 250px;
   height: 250px;
   margin: 0 15px 21px 0;
@@ -611,21 +613,6 @@ ul#menu li:last-child:hover {
 #jack,
 #hue-square {
   margin-right: 0;
-}
-
-
-#neighbor-nation {
-  width: 521px;
-  height: 250px;
-  margin-right: 15px;
-}
-
-#neighbor-nation {
-  margin-bottom: 21px;
-}
-
-#neighbor-small {
-  display: none;
 }
 
 ul.project-container {
@@ -782,14 +769,12 @@ ul.experimental {
   #hue-square,
   #wiki-articles,
   #jack,
-  #ntrval {
-    width: 200px;
-    height: 200px;
-  }
-
+  #ntrval,
   #neighbor-nation img,
-  #neighbor-nation {
-    width: 417px;
+  #neighbor-nation,
+  #isabel-chen img,
+  #isabel-chen {
+    width: 200px;
     height: 200px;
   }
 
@@ -805,16 +790,6 @@ ul.experimental {
 
   ul.project-container li a .project-info .project-background {
     width: 200px;
-  }
-
-  ul.project-container li#neighbor-nation a .project-info .project-descrip,
-  ul.project-container li#neighbor-nation a .project-info .project-background {
-    width: 417px;
-  }
-
-  ul.project-container li:hover a .project-info .project-background,
-  ul.project-container li#neighbor-nation:hover a .project-info .project-background {
-    height: 200px;
   }
 
   ul.project-container li a .project-info .project-descrip h5 {
@@ -896,7 +871,8 @@ ul.experimental {
     margin-right: 0;
   }
 
-  #hue-square {
+  #hue-square,
+  #isabel-chen {
     margin-right: 15px;
   }
 
@@ -959,21 +935,9 @@ ul.experimental {
   }
 
   #hue-square,
-  #wiki-articles {
+  #wiki-articles,
+  #isabel-chen {
     margin-right: 0;
-  }
-
-  #neighbor-large {
-    display: none;
-  }
-
-  #neighbor-small {
-    display: block;
-  }
-
-  #neighbor-nation img,
-  #neighbor-nation {
-    width: 200px;
   }
 
   ul.project-container li#neighbor-nation a .project-info .project-descrip,
