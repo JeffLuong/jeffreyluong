@@ -649,6 +649,7 @@ ul.project-container li a .project-info .project-descrip h5 {
   font-style: normal;
   font-weight: 400;
   letter-spacing: -1px;
+  margin: 1em auto;
 }
 
 ul.project-container li a .project-info .project-descrip span.link {
