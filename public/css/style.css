@@ -602,14 +602,17 @@ ul#menu li:last-child:hover {
 #hue-square,
 #wiki-articles,
 #jack,
-#ntrval,
+#hue-square,
+#isabel-chen,
 #neighbor-nation,
-#isabel-chen {
+#w-now,
+#neighbor-nation {
   width: 250px;
   height: 250px;
   margin: 0 15px 21px 0;
 }
 
+#ntrval,
 #jack,
 #hue-square {
   margin-right: 0;
@@ -774,7 +777,9 @@ ul.experimental {
   #neighbor-nation img,
   #neighbor-nation,
   #isabel-chen img,
-  #isabel-chen {
+  #isabel-chen,
+  #w-now img,
+  #w-now {
     width: 200px;
     height: 200px;
   }
@@ -794,12 +799,12 @@ ul.experimental {
   }
 
   ul.project-container li a .project-info .project-descrip h5 {
-    font-size: 1em;
+    font-size: .85em;
     margin-bottom: 15px;
   }
 
   ul.project-container li a .project-info .project-descrip span {
-    font-size: .85em;
+    font-size: .75em;
   }
 
   ul.project-container li a .project-info .project-descrip span.link {
@@ -867,13 +872,13 @@ ul.experimental {
     width: 420px;
   }
 
-  #neighbor-nation,
-  #ntrval {
+  #ntrval,
+  #isabel-chen,
+  #neighbor-nation {
     margin-right: 0;
   }
 
-  #hue-square,
-  #isabel-chen {
+  #hue-square {
     margin-right: 15px;
   }
 
@@ -937,7 +942,10 @@ ul.experimental {
 
   #hue-square,
   #wiki-articles,
-  #isabel-chen {
+  #isabel-chen,
+  #neighbor-nation,
+  #jack,
+  #w-now {
     margin-right: 0;
   }
 
