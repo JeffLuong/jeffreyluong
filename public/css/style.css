@@ -602,9 +602,7 @@ ul#menu li:last-child:hover {
 #hue-square,
 #wiki-articles,
 #jack,
-#hue-square,
 #isabel-chen,
-#neighbor-nation,
 #w-now,
 #neighbor-nation {
   width: 250px;
@@ -614,7 +612,7 @@ ul#menu li:last-child:hover {
 
 #ntrval,
 #jack,
-#hue-square {
+#w-now {
   margin-right: 0;
 }
 
@@ -878,7 +876,8 @@ ul.experimental {
     margin-right: 0;
   }
 
-  #hue-square {
+  #hue-square,
+  #w-now {
     margin-right: 15px;
   }
 
