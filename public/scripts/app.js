@@ -1,134 +1,110 @@
 $(document).ready(function() {
-  $(".name").addClass("fadeIn");
-  $(".section").addClass("fadeIn");
+  $('.name').addClass('fadeIn');
+  $('.section').addClass('fadeIn');
 });
 
-var $hamburger = $("#hamburger-button");
-var $root = $('html, body');
+let $hamburger = $('#hamburger-button');
+let $menuWrapper = $('#menu-wrapper');
+let $root = $('html, body');
 
 function animateHamburger() {
   $hamburger.toggleClass('open');
 };
 
 function slideMenu() {
-  $("#menu-wrapper").toggleClass('open');
-  $("#menu-wrapper").one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd',
+  $menuWrapper.toggleClass('open');
+  $menuWrapper.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd',
   function(event) {
-    $("ul#menu li").toggleClass('trans-end');
+    $('ul#menu li').toggleClass('trans-end');
   });
 };
 
-$hamburger.on('click', function(){
+function animateMenu() {
   slideMenu();
   animateHamburger();
+}
+
+function scrollTop(selector) {
+  $root.animate({
+    scrollTop: $(selector).offset().top
+  }, 750);  
+}
+
+function scrollAnimate(selector) {
+  scrollTop(selector);
+  if ($menuWrapper.hasClass('open')) {
+    animateMenu();
+  }
+  return false;
+}
+
+$hamburger.on('click', function(){
+  animateMenu();
 });
 
 //<><><><> Top menu <><><><><>//
 $('#app-bio').click(function() {
-    $root.animate({
-        scrollTop: $(".app-bio").offset().top
-    }, 750);
-    slideMenu();
-    animateHamburger();
-    return false;
+  return scrollAnimate('.app-bio');
 });
 
 $('#app-work').click(function() {
-    $root.animate({
-        scrollTop: $(".app-work").offset().top
-    }, 750);
-    slideMenu();
-    animateHamburger();
-    return false;
+  return scrollAnimate('.app-work');
 });
 
 $('#app-photography').click(function() {
-    $root.animate({
-        scrollTop: $(".app-photography").offset().top
-    }, 750);
-    slideMenu();
-    animateHamburger();
-    return false;
+  return scrollAnimate('.app-photography');
 });
 
 $('#app-contact').click(function() {
-    $root.animate({
-        scrollTop: $(".app-contact").offset().top
-    }, 750);
-    slideMenu();
-    animateHamburger();
-    return false;
+  return scrollAnimate('.app-contact');
 });
 
 //<><><><> Main menu <><><><>//
 
 $('#app-bio2').click(function() {
-    $root.animate({
-        scrollTop: $(".app-bio").offset().top
-    }, 750);
-    slideMenu();
-    animateHamburger();
-    return false;
+  return scrollAnimate('.app-bio');
 });
 
 $('#app-work2').click(function() {
-    $root.animate({
-        scrollTop: $(".app-work").offset().top
-    }, 750);
-    slideMenu();
-    animateHamburger();
-    return false;
+  return scrollAnimate('.app-work');
 });
 
 $('#app-photography2').click(function() {
-    $root.animate({
-        scrollTop: $(".app-photography").offset().top
-    }, 750);
-    slideMenu();
-    animateHamburger();
-    return false;
+  return scrollAnimate('.app-photography');
 });
 
 $('#app-contact2').click(function() {
-    $root.animate({
-        scrollTop: $(".app-contact").offset().top
-    }, 750);
-    slideMenu();
-    animateHamburger();
-    return false;
+  return scrollAnimate('.app-contact');
 });
 
 $('.scroll-animate').click(function() {
-  if ($("#menu-wrapper").hasClass("open")) {
-    slideMenu();
-    animateHamburger();
-  } else if ($("#menu-wrapper").hasClass("")) {
-    return;
-  };
+  if ($menuWrapper.hasClass('open')) {
+    animateMenu();
+  }
+  return false;
 });
 
 $('#scroll-top').click(function() {
-    $root.animate({
-        scrollTop: $(".scroll-animate").offset().top
-    }, 750);
-    return false;
+  scrollTop('.scroll-animate');
+  return false;
 });
 
 $(window).load(function(){
-      var  header         = $('.app-header').height();
+  let header = $('.app-header').height();
 
-    $(window).on('scroll', function(){
-        var scroll = window.scrollY;
+  $(window).on('scroll', function(){
+    let scroll = window.scrollY;
 
-        if (scroll >= header) {
-          $("#hamburger-button > span").css({
-            'background-color' : '#4D84A6'
-          });
-        } else {
-          $("#hamburger-button > span").css({
-            'background-color' : 'white'
-          });
-        }
+    if (scroll >= header) {
+      $('#hamburger-button > span').css({
+        'background-color' : '#4D84A6'
+      });
+    } else {
+      $('#hamburger-button > span').css({
+        'background-color' : 'white'
+      });
+    }
+  });
 
-    });
+  $('.app-year').text(new Date().getFullYear());
 });
